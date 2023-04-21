@@ -7,14 +7,15 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+import edu.utsa.cs3443.jgj891_lab5.controller.MainController;
+
 public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-
-        Intent moveToZoneActivityIntent = new Intent(MainActivity.this, ZoneActivity.class);
+        MainController mainController = new MainController(this);
 
         Button btn_x = findViewById(R.id.x_button);
         Button btn_g = findViewById(R.id.g_button);
@@ -24,15 +25,12 @@ public class MainActivity extends AppCompatActivity {
         Button btn_tr = findViewById(R.id.tr_button);
         Button btn_ty = findViewById(R.id.ty_button);
 
-        btn_x.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                startActivity(moveToZoneActivityIntent);
-            }
-        });
-
-
-
-
+        btn_x.setOnClickListener(mainController);
+        btn_b.setOnClickListener(mainController);
+        btn_g.setOnClickListener(mainController);
+        btn_d.setOnClickListener(mainController);
+        btn_r.setOnClickListener(mainController);
+        btn_tr.setOnClickListener(mainController);
+        btn_ty.setOnClickListener(mainController);
     }
 }

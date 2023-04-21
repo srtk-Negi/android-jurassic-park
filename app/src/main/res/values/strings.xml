@@ -8,5 +8,11 @@
     <string name="btn_r">R</string>
     <string name="btn_tr">TR</string>
     <string name="btn_ty">TY</string>
-    <string name="test">Test</string>
+    <string name="zone_page">Zone Page</string>
+    <string name="zone_name">Zone name</string>
+    <string name="relocate_title">RELOCATE A DINOSAUR</string>
+    <string name="dino_name">Dinosaur name: </string>
+    <string name="new_zone">New zone: </string>
+    <string name="relocate_btn">Relocate</string>
+    <string name="park_map_btn">Park Map</string>
 </resources>

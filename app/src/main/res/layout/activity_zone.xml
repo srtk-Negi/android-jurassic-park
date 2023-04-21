@@ -15,7 +15,7 @@
         android:layout_marginTop="257dp"
         android:layout_marginEnd="192dp"
         android:layout_marginBottom="455dp"
-        android:text="@string/test"
+        android:text="@string/zone_page"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
