@@ -1,4 +1,12 @@
 <resources>
     <string name="app_name">jgj891_lab5</string>
     <string name="footer_text">SELECT A ZONE TO CONTINUE</string>
+    <string name="btn_x">X</string>
+    <string name="btn_g">G</string>
+    <string name="btn_b">B</string>
+    <string name="btn_d">D</string>
+    <string name="btn_r">R</string>
+    <string name="btn_tr">TR</string>
+    <string name="btn_ty">TY</string>
+    <string name="test">Test</string>
 </resources>
