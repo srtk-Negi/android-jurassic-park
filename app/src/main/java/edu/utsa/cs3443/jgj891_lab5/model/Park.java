@@ -1,5 +1,7 @@
 package edu.utsa.cs3443.jgj891_lab5.model;
 
+import androidx.annotation.NonNull;
+
 public class Park {
 	String parkName;
 	int dinoMaxCapacity;
@@ -17,6 +19,7 @@ public class Park {
 	}
 
 
+	@NonNull
 	public String toString() {
 		for(int i = 0; i < dinoArr.length; i++) {
             if(dinoArr[i] == null) {

@@ -15,4 +15,7 @@
     <string name="new_zone">New zone: </string>
     <string name="relocate_btn">Relocate</string>
     <string name="park_map_btn">Park Map</string>
+    <string name="num_guests"># of guests: </string>
+    <string name="num_dino"># of dinosaurs: </string>
+    <string name="relocate_a_dino_btn">RELOCATE A DINOSAUR</string>
 </resources>
