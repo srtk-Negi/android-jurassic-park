@@ -9,24 +9,7 @@ import java.util.HashMap;
 import edu.utsa.cs3443.jgj891_lab5.MainActivity;
 
 public class Zone {
-    private String zoneName;
-    private int humanCount;
-    private static HashMap<String,Zone> dinoList= new HashMap<>();
 
-    public Zone(String zoneName, int humanCount, MainActivity mainActivity) throws IOException {
-        this.setZoneName(zoneName);
-        this.setHumanCount(humanCount);
-        this.loadDinos(mainActivity);
-    }
-
-    public void loadDinos(MainActivity mainActivity) throws IOException {
-        AssetManager am = mainActivity.getAssets();
-        InputStream zoneStream = am.open("zones.csv");
-        InputStream dinoStream = am.open("dinos.csv");
-        InputStream typesStream = am.open("types.csv");
-
-
-    }
 
 
     void setZoneName(String zoneName) {
