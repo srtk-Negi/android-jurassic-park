@@ -4,6 +4,7 @@ import android.content.res.AssetManager;
 
 import java.io.IOException;
 import java.io.InputStream;
+import java.util.ArrayList;
 import java.util.HashMap;
 
 import edu.utsa.cs3443.jgj891_lab5.MainActivity;
@@ -11,39 +12,35 @@ import edu.utsa.cs3443.jgj891_lab5.MainActivity;
 public class Zone {
     private String zoneName;
     private int humanCount;
-    private static HashMap<String,Zone> dinoList= new HashMap<>();
-
-    public Zone(String zoneName, int humanCount, MainActivity mainActivity) throws IOException {
+    private ArrayList<Dinosaur> dinoList;
+    public Zone(String zoneName, int humanCount){
         this.setZoneName(zoneName);
         this.setHumanCount(humanCount);
-        this.loadDinos(mainActivity);
+        this.dinoList = new ArrayList<>();
     }
-
-    public void loadDinos(MainActivity mainActivity) throws IOException {
-        AssetManager am = mainActivity.getAssets();
-        InputStream zoneStream = am.open("zones.csv");
-        InputStream dinoStream = am.open("dinos.csv");
-        InputStream typesStream = am.open("types.csv");
-
-
-    }
-
-
-    void setZoneName(String zoneName) {
+    private void setZoneName(String zoneName) {
         this.zoneName = zoneName;
     }
-
-
-    void setHumanCount(int humanCount){
+    private void setHumanCount(int humanCount){
         this.humanCount = humanCount;
     }
-
-
-    String getZoneName(){
+    private void setDinoList(ArrayList<Dinosaur> dinoList){
+        this.dinoList = dinoList;
+    }
+    public String getZoneName(){
         return this.zoneName;
     }
-
-    int getHumanCount(){
+    public int getHumanCount(){
         return this.humanCount;
+    }
+    public ArrayList<Dinosaur> getDinoList(){
+        return this.dinoList;
+    }
+    public String toString() {
+        String ret = "Zone Name: " + this.getZoneName()+"\n";
+        for(int i=0; i < dinoList.size();i++){
+            ret = ret.concat(dinoList.get(i).toString()+"\n");
+        }
+        return ret;
     }
 }
