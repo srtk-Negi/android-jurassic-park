@@ -4,33 +4,52 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
+
+import java.io.IOException;
 
 import edu.utsa.cs3443.jgj891_lab5.controller.MainController;
 
 public class MainActivity extends AppCompatActivity {
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        MainController mainController = null;
+        Intent intent = getIntent();
+        boolean created = intent.getBooleanExtra("CREATED",false);
+        System.out.println(created);
+        if (created){
+            try {
+                mainController = new MainController(this,true);
+            } catch (IOException e) {
+                throw new RuntimeException(e);
+            }
+        }
+        else{
+            try {
+                mainController = new MainController(this,false);
+            } catch (IOException e) {
+                throw new RuntimeException(e);
+            }
+        }
 
-        MainController mainController = new MainController(this);
+        Button b = findViewById(R.id.b_button);
+        Button g = findViewById(R.id.g_button);
+        Button d = findViewById(R.id.d_button);
+        Button r = findViewById(R.id.r_button);
+        Button ty = findViewById(R.id.ty_button);
+        Button tr = findViewById(R.id.tr_button);
+        Button x = findViewById(R.id.x_button);
 
-        Button btn_x = findViewById(R.id.x_button);
-        Button btn_g = findViewById(R.id.g_button);
-        Button btn_d = findViewById(R.id.d_button);
-        Button btn_r = findViewById(R.id.r_button);
-        Button btn_b = findViewById(R.id.b_button);
-        Button btn_tr = findViewById(R.id.tr_button);
-        Button btn_ty = findViewById(R.id.ty_button);
-
-        btn_x.setOnClickListener(mainController);
-        btn_b.setOnClickListener(mainController);
-        btn_g.setOnClickListener(mainController);
-        btn_d.setOnClickListener(mainController);
-        btn_r.setOnClickListener(mainController);
-        btn_tr.setOnClickListener(mainController);
-        btn_ty.setOnClickListener(mainController);
+        b.setOnClickListener(mainController);
+        g.setOnClickListener(mainController);
+        d.setOnClickListener(mainController);
+        r.setOnClickListener(mainController);
+        ty.setOnClickListener(mainController);
+        tr.setOnClickListener(mainController);
+        x.setOnClickListener(mainController);
     }
 }

@@ -9,7 +9,6 @@
     <string name="btn_tr">TR</string>
     <string name="btn_ty">TY</string>
     <string name="zone_page">Zone Page</string>
-    <string name="zone_name">Zone name</string>
     <string name="relocate_title">RELOCATE A DINOSAUR</string>
     <string name="dino_name">Dinosaur name: </string>
     <string name="new_zone">New zone: </string>
@@ -18,4 +17,27 @@
     <string name="num_guests"># of guests: </string>
     <string name="num_dino"># of dinosaurs: </string>
     <string name="relocate_a_dino_btn">RELOCATE A DINOSAUR</string>
+    <string name="human_count">Number of guests %s</string>
+    <string name="dino_count">Number of dinosaurs %s</string>
+    <string name="zone_name">ZONE %s</string>
+    <string name="dinoName1">%s</string>
+    <string name="dinoInfo1">%s,%s</string>
+    <string name="dinoName2">%s</string>
+    <string name="dinoInfo2">%s,%s</string>
+    <string name="dinoName3">%s</string>
+    <string name="dinoInfo3">%s,%s</string>
+    <string name="dinoName4">%s</string>
+    <string name="dinoInfo4">%s,%s</string>
+    <string name="dinoName5">%s</string>
+    <string name="dinoInfo5">%s,%s</string>
+    <string name="dinoName6">%s</string>
+    <string name="dinoInfo6">%s,%s</string>
+    <string name="dinoName7">%s</string>
+    <string name="dinoInfo7">%s,%s</string>
+    <string name="dinoName8">%s</string>
+    <string name="dinoInfo8">%s,%s</string>
+    <string name="dinoName9">%s</string>
+    <string name="dinoInfo9">%s,%s</string>
+    <string name="dinoName10">%s</string>
+    <string name="dinoInfo10">%s,%s</string>
 </resources>

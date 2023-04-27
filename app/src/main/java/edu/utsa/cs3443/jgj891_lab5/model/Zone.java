@@ -16,7 +16,7 @@ public class Zone {
     public Zone(String zoneName, int humanCount){
         this.setZoneName(zoneName);
         this.setHumanCount(humanCount);
-        this.dinoList = new ArrayList<>();
+        this.setDinoList();
     }
     private void setZoneName(String zoneName) {
         this.zoneName = zoneName;
@@ -24,8 +24,8 @@ public class Zone {
     private void setHumanCount(int humanCount){
         this.humanCount = humanCount;
     }
-    private void setDinoList(ArrayList<Dinosaur> dinoList){
-        this.dinoList = dinoList;
+    private void setDinoList(){
+        this.dinoList = new ArrayList<>();
     }
     public String getZoneName(){
         return this.zoneName;
