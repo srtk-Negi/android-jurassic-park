@@ -12,6 +12,13 @@ import edu.utsa.cs3443.jgj891_lab5.model.Dinosaur;
 import edu.utsa.cs3443.jgj891_lab5.model.Zone;
 import edu.utsa.cs3443.jgj891_lab5.R;
 
+/**
+ * The MainController class.
+ *
+ * @author Sarthak Negi
+ * UTSA CS 3443 - Lab 5
+ * Spring 2023
+ */
 public class MainController implements View.OnClickListener{
     private MainActivity mainActivity;
     private ZoneController zoneController;
@@ -42,30 +49,59 @@ public class MainController implements View.OnClickListener{
         mainActivity.startActivity(intent);
     }
 
+    /**
+     *
+     * @return mainActivity
+     */
     public MainActivity getMainActivity() {
         return mainActivity;
     }
 
+    /**
+     * Sets the mainActivity
+     * @param mainActivity
+     */
     public void setMainActivity(MainActivity mainActivity) {
         this.mainActivity = mainActivity;
     }
 
+    /**
+     * Determines the name of the zone clicked
+     * @param ID
+     * @return Zone name
+     */
     public String determineZone(int ID){
         return (ID == R.id.tr_button) ? "TR": (ID == R.id.ty_button) ? "TY": (ID == R.id.r_button) ? "R": (ID == R.id.d_button) ? "D":(ID == R.id.b_button) ? "B":(ID == R.id.g_button) ? "G": "X";
     }
 
+    /**
+     *
+     * @return zoneController
+     */
     public ZoneController getZoneController() {
         return zoneController;
     }
 
+    /**
+     * Sets the Zone controller
+     * @param zoneController
+     */
     public void setZoneController(ZoneController zoneController) {
         this.zoneController = zoneController;
     }
 
+    /**
+     *
+     * @return readBefore
+     */
     public boolean isReadBefore() {
         return readBefore;
     }
 
+    /**
+     * sets the readbefore
+     * @param readBefore
+     */
     public void setReadBefore(boolean readBefore) {
         this.readBefore = readBefore;
     }

@@ -14,6 +14,13 @@ import edu.utsa.cs3443.jgj891_lab5.R;
 import edu.utsa.cs3443.jgj891_lab5.model.Dinosaur;
 import edu.utsa.cs3443.jgj891_lab5.model.Zone;
 
+/**
+ * The DinoController class.
+ *
+ * @author Sarthak Negi
+ * UTSA CS 3443 - Lab 5
+ * Spring 2023
+ */
 public class DinoController implements View.OnClickListener{
     private DinoActivity dinoActivity;
     public DinoController(DinoActivity dinoActivity){
@@ -62,11 +69,18 @@ public class DinoController implements View.OnClickListener{
 
     }
 
-
+    /**
+     *
+     * @return dinoActivity
+     */
     public DinoActivity getDinoActivity() {
         return dinoActivity;
     }
 
+    /**
+     * sets the dinoActivity
+     * @param dinoActivity
+     */
     public void setDinoActivity(DinoActivity dinoActivity) {
         this.dinoActivity = dinoActivity;
     }

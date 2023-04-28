@@ -11,6 +11,13 @@ import edu.utsa.cs3443.jgj891_lab5.ZoneActivity;
 import edu.utsa.cs3443.jgj891_lab5.model.Park;
 import edu.utsa.cs3443.jgj891_lab5.model.Zone;
 
+/**
+ * The ZoneController class.
+ *
+ * @author Sarthak Negi
+ * UTSA CS 3443 - Lab 5
+ * Spring 2023
+ */
 public class ZoneController implements View.OnClickListener {
     private Park park;
     private ZoneActivity zoneActivity;
@@ -38,16 +45,57 @@ public class ZoneController implements View.OnClickListener {
         zoneActivity.startActivity(relocateIntent);
     }
 
+    /**
+     * Sets the zoneActivity
+     * @param zoneActivity
+     */
     private void setZoneActivity(ZoneActivity zoneActivity){
         this.zoneActivity = zoneActivity;
     }
+
+    /**
+     * Sets the mainActivity
+     * @param mainActivity
+     */
     private void setMainActivity(MainActivity mainActivity){this.mainActivity = mainActivity;}
+
+    /**
+     * sets the read
+     * @param read
+     */
     private void setRead(boolean read){this.read = read;}
+
+    /**
+     * Sets the park
+     *
+     * @param mainActivity
+     * @throws IOException
+     */
     private void setPark(MainActivity mainActivity) throws IOException {this.park = new Park("Jurassic Park", mainActivity);}
+
+    /**
+     *
+     * @return zoneActivity
+     */
     public ZoneActivity getZoneActivity(){
         return(this.zoneActivity);
     }
+
+    /**
+     *
+     * @return mainActivity
+     */
     public MainActivity getMainActivity(){return (this.mainActivity);}
+
+    /**
+     *
+     * @return read
+     */
     public boolean getRead(){return(this.read);}
+
+    /**
+     *
+     * @return park
+     */
     public Park getPark(){return (this.park);}
 }
