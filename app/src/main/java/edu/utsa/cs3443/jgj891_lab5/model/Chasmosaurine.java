@@ -13,7 +13,7 @@ public abstract class Chasmosaurine implements Dinosaur {
         return getType() + " named " + getName() + carnivoreStatus;
     }
     public String getType() {
-        return "* Chasmosaurine: " + getSubType();
+        return "Chasmosaurine: " + getSubType();
     }
     public boolean isVegetarian() {
         return isVegetarian;

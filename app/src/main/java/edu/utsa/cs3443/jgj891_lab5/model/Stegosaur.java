@@ -22,7 +22,7 @@ public abstract class Stegosaur implements Dinosaur{
 	}
 
 	public String getType() {
-		return ("* Stegosaur: "+this.getSubType());
+		return ("Stegosaur: "+this.getSubType());
 	}
 
 	public boolean isVegetarian() {

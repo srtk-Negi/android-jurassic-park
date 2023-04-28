@@ -46,7 +46,7 @@ public class ZoneActivity extends AppCompatActivity {
         int length = intent.getIntExtra("SIZE",0);
 
         for(int i=0;i<length;i++){
-            String []dino = intent.getStringArrayExtra("DINO".concat(Integer.toString(i+1)));
+            String[] dino = intent.getStringArrayExtra("DINO".concat(Integer.toString(i+1)));
             System.out.println(dino[0]);
             nameViews[i] = findViewById(nameResources[i]);
             infoViews[i] = findViewById(infoResources[i]);

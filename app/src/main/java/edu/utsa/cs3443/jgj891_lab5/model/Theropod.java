@@ -22,7 +22,7 @@ public abstract class Theropod implements Dinosaur{
 	}
 
 	public String getType() {
-		return ("* Theropod: "+this.getSubType());
+		return ("Theropod: "+this.getSubType());
 	}
 
 	public boolean isVegetarian() {
@@ -30,7 +30,7 @@ public abstract class Theropod implements Dinosaur{
 	}
 
 	public String toString() {
-		return(this.getType() +" named "+ this.getName()+" "+(this.isVegetarian()?"(not carnivore)":"(carnivore)"));
+		return(this.getSubType() +" "+(this.isVegetarian()?"(not carnivore)":"(carnivore)"));
 	}
 
 	public abstract String getSubType();
