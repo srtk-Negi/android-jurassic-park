@@ -22,7 +22,7 @@ public abstract class Sauropod implements Dinosaur {
 	}
 
 	public String getType() {
-		return ("* Sauropod: "+this.getSubType());
+		return ("Sauropod: "+this.getSubType());
 	}
 
 	public boolean isVegetarian() {

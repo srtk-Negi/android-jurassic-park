@@ -40,4 +40,5 @@
     <string name="dinoInfo9">%s,%s</string>
     <string name="dinoName10">%s</string>
     <string name="dinoInfo10">%s,%s</string>
+    <string name="content_desc">Content Description</string>
 </resources>

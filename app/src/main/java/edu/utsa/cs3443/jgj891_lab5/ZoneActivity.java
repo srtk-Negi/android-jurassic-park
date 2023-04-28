@@ -28,13 +28,11 @@ public class ZoneActivity extends AppCompatActivity {
         setContentView(R.layout.activity_zone);
         ZoneController zoneController;
         zoneController = new ZoneController(this);
-        Button relocate = findViewById(R.id.button);
+        Button relocate = findViewById(R.id.relocate_a_dino_btn);
         relocate.setOnClickListener(zoneController);
 
-        guestNum = findViewById(R.id.guests);
-
-
-        dinoNum = findViewById(R.id.dinos);
+        guestNum = findViewById(R.id.num_guests);
+        dinoNum = findViewById(R.id.num_dino);
 
         zone = findViewById(R.id.zone_name);
 

@@ -11,9 +11,10 @@ import android.widget.TextView;
 import edu.utsa.cs3443.jgj891_lab5.controller.DinoController;
 
 public class DinoActivity extends AppCompatActivity {
-    EditText dinoName,zone;
-    TextView whichZone;
-    String zonename;
+    EditText dinoName;
+    EditText zone;
+    TextView currentZone;
+    String zoneName;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -27,12 +28,11 @@ public class DinoActivity extends AppCompatActivity {
         relocate.setOnClickListener(dinoController);
         map.setOnClickListener(dinoController);
 
-        whichZone = findViewById(R.id.zone_name);
+        currentZone = findViewById(R.id.zone_name);
         Intent intent = getIntent();
         String zone = intent.getStringExtra("ZONENAME");
-        whichZone.setText(getString(R.string.zone_name,zone));
-
-        zonename = intent.getStringExtra("ZONENAME");
+        currentZone.setText(getString(R.string.zone_name,zone));
+        zoneName = intent.getStringExtra("ZONENAME");
 
     }
     public String getName(){
@@ -42,7 +42,7 @@ public class DinoActivity extends AppCompatActivity {
         return zone.getText().toString();
     }
     public String getCalledZone(){
-        return zonename;
+        return zoneName;
     }
 
 }
