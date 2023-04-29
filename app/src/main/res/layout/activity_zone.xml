@@ -106,16 +106,14 @@
                     android:layout_height="65dp"
                     android:paddingLeft="30dp"
                     android:paddingRight="30dp"
-                    android:textSize="40sp"
-                    android:text="some"/>
+                    android:textSize="40sp"/>
 
                 <TextView
                     android:id="@+id/dinoInfo1"
                     android:layout_width="295dp"
                     android:layout_height="50dp"
                     android:paddingLeft="30dp"
-                    android:textSize="18sp"
-                    android:text="test"/>
+                    android:textSize="18sp"/>
             </LinearLayout>
         </LinearLayout>
 
@@ -140,16 +138,13 @@
                     android:layout_height="65dp"
                     android:paddingLeft="30dp"
                     android:paddingRight="30dp"
-                    android:textSize="40sp"
-                    android:text="some"/>
-
+                    android:textSize="40sp"/>
                 <TextView
                     android:id="@+id/dinoInfo2"
                     android:layout_width="295dp"
                     android:layout_height="50dp"
                     android:paddingLeft="30dp"
-                    android:textSize="18sp"
-                    android:text="test"/>
+                    android:textSize="18sp"/>
             </LinearLayout>
         </LinearLayout>
 
@@ -174,16 +169,13 @@
                     android:layout_height="65dp"
                     android:paddingLeft="30dp"
                     android:paddingRight="30dp"
-                    android:textSize="40sp"
-                    android:text="some"/>
-
+                    android:textSize="40sp"/>
                 <TextView
                     android:id="@+id/dinoInfo3"
                     android:layout_width="295dp"
                     android:layout_height="50dp"
                     android:paddingLeft="30dp"
-                    android:textSize="18sp"
-                    android:text="test"/>
+                    android:textSize="18sp"/>
             </LinearLayout>
         </LinearLayout>
 
@@ -208,16 +200,13 @@
                     android:layout_height="65dp"
                     android:paddingLeft="30dp"
                     android:paddingRight="30dp"
-                    android:textSize="40sp"
-                    android:text="some"/>
-
+                    android:textSize="40sp"/>
                 <TextView
                     android:id="@+id/dinoInfo4"
                     android:layout_width="295dp"
                     android:layout_height="50dp"
                     android:paddingLeft="30dp"
-                    android:textSize="18sp"
-                    android:text="test"/>
+                    android:textSize="18sp"/>
             </LinearLayout>
         </LinearLayout>
 
@@ -242,9 +231,7 @@
                     android:layout_height="65dp"
                     android:paddingLeft="30dp"
                     android:paddingRight="30dp"
-                    android:textSize="40sp"
-                    android:text="some"/>
-
+                    android:textSize="40sp"/>
                 <TextView
                     android:id="@+id/dinoInfo5"
                     android:layout_width="295dp"

@@ -42,6 +42,7 @@ public class ZoneController implements View.OnClickListener {
     @Override
     public void onClick(View view) {
         Intent relocateIntent = new Intent(this.getZoneActivity(), DinoActivity.class);
+        relocateIntent.putExtra("ZONE", zoneActivity.getZone());
         zoneActivity.startActivity(relocateIntent);
     }
 

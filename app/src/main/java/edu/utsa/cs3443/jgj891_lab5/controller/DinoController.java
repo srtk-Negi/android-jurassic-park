@@ -37,7 +37,7 @@ public class DinoController implements View.OnClickListener{
             String zoneName = dinoActivity.getCalledZone();
             Toast toast;
 
-            if (zones.containsKey(zoneName)){
+            if (zones.containsKey(zoneName) && zones.containsKey(newZone)){
                 for(int i=0; i < zones.get(zoneName).getDinoList().size();i++){
                     if (zones.get(zoneName).getDinoList().get(i).getName().equals(dinoName)){
                         dino = zones.get(zoneName).getDinoList().remove(i);

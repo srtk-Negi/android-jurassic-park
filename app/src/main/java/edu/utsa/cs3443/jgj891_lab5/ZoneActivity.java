@@ -12,6 +12,13 @@ import java.io.IOException;
 import edu.utsa.cs3443.jgj891_lab5.controller.DinoController;
 import edu.utsa.cs3443.jgj891_lab5.controller.ZoneController;
 
+/**
+ * The ZoneActivity class.
+ *
+ * @author Sarthak Negi
+ * UTSA CS 3443 - Lab 5
+ * Spring 2023
+ */
 public class ZoneActivity extends AppCompatActivity {
     TextView guestNum,dinoNum,zone;
     TextView []nameViews = new TextView[10];
@@ -55,15 +62,42 @@ public class ZoneActivity extends AppCompatActivity {
         }
 
     }
+
+    /**
+     *
+     * @param textView
+     * @param ID
+     * @param zoneName
+     */
     public void setInfoText(TextView textView,int ID, String zoneName){
         textView.setText(getString(ID,zoneName));
     }
+
+    /**
+     *
+     * @param textView
+     * @param ID
+     * @param name
+     */
     public void setNameView(TextView textView, int ID, String name){
         textView.setText(getString(ID,name));
     }
+
+    /**
+     *
+     * @param textView
+     * @param ID
+     * @param type
+     * @param veg
+     */
     public void setSpecifics(TextView textView, int ID, String type, String veg){
         textView.setText(getString(ID,type,veg));
     }
+
+    /**
+     *
+     * @return Current zone
+     */
     public String getZone(){
         Intent intent = getIntent();
         return intent.getStringExtra("ZONE");

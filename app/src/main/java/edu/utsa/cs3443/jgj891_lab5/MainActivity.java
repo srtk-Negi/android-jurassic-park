@@ -10,6 +10,13 @@ import android.widget.ImageButton;
 import java.io.IOException;
 
 import edu.utsa.cs3443.jgj891_lab5.controller.MainController;
+/**
+ * The MainActivity class.
+ *
+ * @author Sarthak Negi
+ * UTSA CS 3443 - Lab 5
+ * Spring 2023
+ */
 
 public class MainActivity extends AppCompatActivity {
 

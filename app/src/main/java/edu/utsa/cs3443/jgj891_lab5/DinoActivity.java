@@ -9,12 +9,23 @@ import android.widget.EditText;
 import android.widget.TextView;
 
 import edu.utsa.cs3443.jgj891_lab5.controller.DinoController;
-
+/**
+ * The DinoActivity class.
+ *
+ * @author Sarthak Negi
+ * UTSA CS 3443 - Lab 5
+ * Spring 2023
+ */
 public class DinoActivity extends AppCompatActivity {
     EditText dinoName;
     EditText zone;
     TextView currentZone;
     String zoneName;
+
+    /**
+     *
+     * @param savedInstanceState
+     */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -30,17 +41,32 @@ public class DinoActivity extends AppCompatActivity {
 
         currentZone = findViewById(R.id.zone_name);
         Intent intent = getIntent();
-        String zone = intent.getStringExtra("ZONENAME");
+        String zone = intent.getStringExtra("ZONE");
         currentZone.setText(getString(R.string.zone_name,zone));
-        zoneName = intent.getStringExtra("ZONENAME");
+        zoneName = intent.getStringExtra("ZONE");
 
     }
+
+    /**
+     *
+     * @return name of the dinosaur
+     */
     public String getName(){
         return dinoName.getText().toString();
     }
+
+    /**
+     *
+     * @return zone
+     */
     public String getZone(){
         return zone.getText().toString();
     }
+
+    /**
+     *
+     * @return zoneName
+     */
     public String getCalledZone(){
         return zoneName;
     }
