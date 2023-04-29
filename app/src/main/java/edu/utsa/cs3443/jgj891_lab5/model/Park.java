@@ -11,6 +11,13 @@ import java.util.Scanner;
 
 import edu.utsa.cs3443.jgj891_lab5.MainActivity;
 
+/**
+ * The Park class.
+ *
+ * @author Sarthak Negi
+ * UTSA CS 3443 - Lab 5
+ * Spring 2023
+ */
 public class Park {
 	String parkName;
 	int dinoMaxCapacity;
@@ -26,28 +33,83 @@ public class Park {
 		this.setZones();
 		this.setPark(mainActivity);
 	}
+
+	/**
+	 *
+	 * @param parkName
+	 */
 	private void setParkName(String parkName){
 		this.parkName = parkName;
 	}
+
+	/**
+	 * Creates a new hashMap dinoTypes
+	 */
 	private void setDinoTypes(){
 		this.dinoTypes = new HashMap<>();
 	}
+
+	/**
+	 * Creates a new HashMap zones
+	 */
 	private void setZones(){
 		zones = new HashMap<>();
 	}
+
+	/**
+	 *
+	 * @param mainActivity
+	 */
 	private void setMainActivity(MainActivity mainActivity){
 		this.mainActivity = mainActivity;
 	}
+
+	/**
+	 *
+	 * @return parkName
+	 */
 	public String getParkName(){return(this.parkName);}
+
+	/**
+	 *
+	 * @return dinoTypes
+	 */
 	public HashMap<String, Boolean> getDinoTypes(){return(this.dinoTypes);}
+
+	/**
+	 *
+	 * @return zones
+	 */
 	public HashMap<String, Zone> getZones(){return(this.getZones());}
+
+	/**
+	 *
+	 * @return mainActivity
+	 */
 	public MainActivity getMainActivity(){return(this.mainActivity);}
+
+	/**
+	 * Adds a dinosaur to the dinoList
+	 * @param zoneName
+	 * @param dino
+	 */
 	public void addDino(String zoneName, Dinosaur dino) {
 		zones.get(zoneName).getDinoList().add(dino);
 	}
+
+	/**
+	 * Adds a zone
+	 * @param zoneName
+	 * @param zone
+	 */
 	public void addZone(String zoneName, Zone zone) {
 		zones.put(zoneName, zone);
 	}
+
+	/**
+	 *
+	 * @return string representation of the park
+	 */
 	@NonNull
 	public String toString() {
 		String ret = "---------------------------- \n"
@@ -59,6 +121,12 @@ public class Park {
 		return ret;
 	}
 
+	/**
+	 *
+	 * @param dinoType
+	 * @param dinoName
+	 * @return name of the dinosaur
+	 */
 	public Dinosaur determineDino(String dinoType, String dinoName) {
 		Dinosaur dino = null;
 		switch (dinoType) {
@@ -92,6 +160,11 @@ public class Park {
 		return dino;
 	}
 
+	/**
+	 * Reads the data from the Assets folder
+	 * @param mainActivity
+	 * @throws IOException
+	 */
 
 	public void setPark(MainActivity mainActivity) throws IOException {
 		AssetManager am = mainActivity.getAssets();
